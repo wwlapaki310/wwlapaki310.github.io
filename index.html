@@ -1,60 +1,55 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Load TensorFlow.js -->
-    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <!-- Load Posenet -->
-    <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
-    <script src="js/camera.js"></script>
-    <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            color: black;
-        }
-        .footer-text {
-            max-width: 600px;
-            text-align: center;
-            margin: auto;
-        }
-        @media only screen and (max-width: 600px) {
-          .footer-text, .dg {
-            display: none;
-          }
-        }
-      </style>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
+<!doctype html>
 
- <body>
-    <div id="info" style='display:none'>
-    </div>
-    <div id="loading">
-        Loading the model...
-    </div>
+<html class="no-js" lang="en-US">
 
-    <div id='main' style='display:none'>
-        <video id="video" playsinline style=" -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        display: none;
-        ">
-        </video>
-        <canvas id="output" />
-    </div>
-    <div class="footer">
-        <div class="footer-text">
-            <p>
-                PoseNet runs with either a <strong>single-pose</strong> or <strong>multi-pose</strong> detection algorithm. The single person pose detector is faster and more accurate but requires only one subject present in the image.
-                <br>
-                <br> The <strong>output stride</strong> and <strong>image scale factor</strong> have the largest effects on accuracy/speed. A <i>higher</i> output stride results in lower accuracy but higher speed. A <i>higher</i> image scale factor results in higher accuracy but lower speed.
-            </p>
-        </div>
-    </div>
-    <script src="camera.js"></script>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>aki310 home page</title>
+
+
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="page-header text-center">aki310's page</h1>
+		<div class="row mt-3">
+			<div class="col-md-6">
+				<img src="img/kitune.jpg" class="img-fluid">
+
+			</div>
+			<div class="col-md-6">
+				<h3>About</h3>
+			<p>My name is Satoru Akita.</p>
+			<p>I was engaged in research on DNA nanotechnology and MEMS(Micro Electro Mechanical System) sensor at Tohoku University in Japan.</p>
+			<p>I like to develop new and unique things.I have participated in several competitions such as Hackason and have experiences of service development with IT technology by team.</p>
+			<h3>Career</h3>
+			<p>・Tohoku University, Division of Mechanical Engineering, Department of Robotics, Micro Electro Mechanical System Lab, Master course student.</p>
+			<p>・I will work at Sony Corporation from April 2019</p>
+
+			</div>
+
+			<div id="social-platforms">
+				<a class="btn btn-icon btn-facebook" href="https://www.facebook.com/aki310ooooo"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+				<a class="btn btn-icon btn-twitter" href="https://twitter.com/fox_aki310ooooo"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+				<a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/in/satoru-akita-6070a4145/"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+			</div>
+
+
+			
+
+		</div>
+	</div>
+
+			
 </body>
 
 
