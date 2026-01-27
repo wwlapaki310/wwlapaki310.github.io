@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(du:*)",
+      "Bash(pip install:*)",
+      "Bash(python compress_images.py:*)"
+    ]
+  }
+}
