@@ -1,0 +1,295 @@
+[
+  {
+    "id": "mandalart",
+    "type": "portfolio",
+    "date": "2026-01",
+    "title": "みんなのマンダラート",
+    "desc": "目標達成シートで有名なマンダラートをWeb上で作成、投稿するサイト。年末年始にClaude Codeで開発。",
+    "image": "/images/minnano_mandara-to.jpg",
+    "icon": "🎯",
+    "links": [
+      { "label": "Demo", "url": "https://minna-no-mandalart.vercel.app/prototype/index.html" },
+      { "label": "GitHub", "url": "https://github.com/wwlapaki310/minna-no-mandalart" }
+    ]
+  },
+  {
+    "id": "techworldhack2025",
+    "type": "report",
+    "date": "2025-12-25",
+    "title": "TechWorldハッカソン2025",
+    "desc": "2025年12月、LayerX社で開催。観光地情報の生成基盤＋ARグラス向けアプリを3日間で開発。",
+    "image": "/images/DeepTripGlass.png",
+    "icon": "🥽",
+    "links": [
+      { "label": "ブログ", "url": "https://akisatooo.hatenablog.com/entry/2025/12/25/000959" },
+      { "label": "GitHub", "url": "https://github.com/wwlapaki310/JL02_TechWorldHackathon2025" }
+    ],
+    "blogUrl": "https://akisatooo.hatenablog.com/entry/2025/12/25/000959"
+  },
+  {
+    "id": "ossj2025",
+    "type": "report",
+    "date": "2025-12-17",
+    "title": "Open Source Summit Japan 2025 ボランティアスタッフ",
+    "desc": "Linux Foundation主催、1000名超の国際OSSカンファレンスにボランティアスタッフとして参加。",
+    "image": "/images/OpenSourceSummitJapan2025.jpg",
+    "icon": "🌐",
+    "links": [
+      { "label": "ブログ", "url": "https://akisatooo.hatenablog.com/entry/2025/12/17/224101" }
+    ],
+    "blogUrl": "https://akisatooo.hatenablog.com/entry/2025/12/17/224101"
+  },
+  {
+    "id": "sechack365-2025",
+    "type": "slide",
+    "date": "2025-11",
+    "title": "Sechack365修了生講演",
+    "desc": "2025年11月大阪会向けに修了生として登壇。EdgeAIの社会実装とSechack365での活動を発表。",
+    "image": "/images/sechack365_preview2025.png",
+    "icon": "🎤",
+    "links": [
+      { "label": "Slide", "url": "https://speakerdeck.com/aki310ooooo/sechack365xiu-liao-sheng-zhao-dai-jiang-yan-20251114" }
+    ]
+  },
+  {
+    "id": "academia-conference",
+    "type": "portfolio",
+    "date": "2025-10",
+    "title": "アカデミア会議スケジュール一覧サイト",
+    "desc": "ML・CV・HCI・セキュリティ系の国際会議スケジュールをGoogleスプレッドシートから自動集計して表示。",
+    "image": "/images/academia-conference.jpg",
+    "icon": "📅",
+    "links": [
+      { "label": "Site", "url": "https://wwlapaki310.github.io/academic-conference-schedule-for-SW-Engineer/" },
+      { "label": "GitHub", "url": "https://github.com/wwlapaki310/academic-conference-schedule-for-SW-Engineer" }
+    ]
+  },
+  {
+    "id": "ai-semiconductor",
+    "type": "report",
+    "date": "2025-08-31",
+    "title": "AIと半導体（松尾研講義）受講",
+    "desc": "AI系チップ設計入門。GPU/NVIDIAの歴史や半導体設計の理論を学習。毎週ブログに内容をまとめた。",
+    "image": "/images/AI-to-semicon.png",
+    "icon": "💡",
+    "links": [
+      { "label": "ブログ", "url": "https://akisatooo.hatenablog.com/entry/2025/08/31/142902" }
+    ],
+    "blogUrl": "https://akisatooo.hatenablog.com/entry/2025/08/31/142902"
+  },
+  {
+    "id": "sre-next-2025",
+    "type": "report",
+    "date": "2025-07",
+    "title": "NOCスタッフ（SRE NEXT 2025）",
+    "desc": "SREカンファレンスにNetwork Operations Centerとして参加。数百万円のスイッチングハブ設定等を実施。",
+    "image": "/images/sre-next2025.jpg",
+    "icon": "🔧",
+    "links": [
+      { "label": "SRE NEXT", "url": "https://sre-next.dev/2025/" }
+    ]
+  },
+  {
+    "id": "slidevs-on-vercel",
+    "type": "portfolio",
+    "date": "2024-12",
+    "title": "slidevs-on-vercel",
+    "desc": "MarkdownスライドツールSlidevを1リポジトリ複数スライドでVercelにホストするOSSテンプレート。",
+    "image": "/images/slidev-on-vercel.png",
+    "icon": "🗂️",
+    "links": [
+      { "label": "Demo", "url": "https://slidevs-on-vercel.vercel.app/" },
+      { "label": "GitHub", "url": "https://github.com/wwlapaki310/Slidevs-on-Vercel" }
+    ]
+  },
+  {
+    "id": "digital-zen-master",
+    "type": "report",
+    "date": "2024-12-09",
+    "title": "Digital Zen Master（SPAJAM 2024本線）",
+    "desc": "加速度センサで姿勢と呼吸を測定・評価し振動と音でフィードバックする禅体験スマホアプリ。地上波TV放映。",
+    "image": "/images/ZenMaster.png",
+    "icon": "🧘",
+    "links": [
+      { "label": "体験記", "url": "https://akisatooo.hatenablog.com/entry/2024/12/09/224336" }
+    ],
+    "blogUrl": "https://akisatooo.hatenablog.com/entry/2024/12/09/224336"
+  },
+  {
+    "id": "coloring-bottle",
+    "type": "report",
+    "date": "2024-10-24",
+    "title": "Coloring Bottle（SPAJAM 2024予選 優秀賞）",
+    "desc": "ペットボトルをスマホアプリで自在に光らせるIoTアプリ。SPAJAM2024予選で優秀賞、本選出場。",
+    "image": "/images/coloring bottle.png",
+    "icon": "🍶",
+    "links": [
+      { "label": "体験記", "url": "https://akisatooo.hatenablog.com/entry/2024/10/24/182059" }
+    ],
+    "blogUrl": "https://akisatooo.hatenablog.com/entry/2024/10/24/182059"
+  },
+  {
+    "id": "openmwp-chip",
+    "type": "report",
+    "date": "2024-08-16",
+    "title": "OpenMPWで半導体チップを設計・製造",
+    "desc": "ISHI会で1日CMOSインバータを設計するイベントに参加。Google後援OpenMPWで130nmプロセスチップを製造。",
+    "image": "/images/mycmos.jpg",
+    "icon": "🔬",
+    "links": [
+      { "label": "体験記", "url": "https://akisatooo.hatenablog.com/entry/2024/08/16/233725" }
+    ],
+    "blogUrl": "https://akisatooo.hatenablog.com/entry/2024/08/16/233725"
+  },
+  {
+    "id": "unity-fall-guys",
+    "type": "portfolio",
+    "date": "2022",
+    "title": "UnityでFall Guys風アクションゲーム",
+    "desc": "5ステージ構成、Photonでネットワーク同期。ゼルダの祠のような神秘的な世界観のオンラインゲーム。",
+    "icon": "🎮",
+    "links": [
+      { "label": "プレイ", "url": "https://unityroom.com/games/aki310-lot1" }
+    ]
+  },
+  {
+    "id": "unity-animation",
+    "type": "portfolio",
+    "date": "2022",
+    "title": "Unityで3Dアニメーション動画 [UNITE IN THE SKY]",
+    "desc": "曲のPV風動画をUnityで制作。アセット配置とカメラワークのみでコーディングほぼなし、約20時間で完成。",
+    "icon": "🎬",
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=PnCsbx1P4ws" }
+    ]
+  },
+  {
+    "id": "nasa-spaceapp-2020",
+    "type": "report",
+    "date": "2020-10",
+    "title": "NASA SPACE APP CHALLENGE 2020 東京優勝",
+    "desc": "NASA主催ハッカソンで深層学習によるハザードマップ自動生成AIを開発。東京予選優勝。",
+    "image": "/images/deephazard.png",
+    "icon": "🚀",
+    "links": [
+      { "label": "詳細", "url": "https://2020.spaceappschallenge.org/locations/tokyo/teams" }
+    ]
+  },
+  {
+    "id": "react-movie",
+    "type": "portfolio",
+    "date": "2020",
+    "title": "React + Firebaseによる映画検索サイト",
+    "desc": "React Hooksチュートリアルで映画検索サイトを実装。Firebase Hostingで公開。",
+    "image": "/images/react_movie.png",
+    "icon": "🎥",
+    "links": [
+      { "label": "Demo", "url": "https://react-movie-search-acae4.web.app/" },
+      { "label": "GitHub", "url": "https://github.com/wwlapaki310/react/tree/main/hooks" }
+    ]
+  },
+  {
+    "id": "face-hiding-linebot",
+    "type": "portfolio",
+    "date": "2019",
+    "title": "顔隠しLinebot",
+    "desc": "画像を送ると顔をスタンプで隠してくれるLINE Bot。OpenCV + LINE Messaging API。",
+    "icon": "🤖",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/wwlapaki310/LineAPI" }
+    ]
+  },
+  {
+    "id": "show-me-your-drawing",
+    "type": "portfolio",
+    "date": "2019",
+    "title": "SHOW ME YOUR DRAWING",
+    "desc": "絵を書く過程をGIF動画にするサービス。絵の描き方を知ったり、予想で期待と裏切りを楽しめる。",
+    "icon": "🎨",
+    "links": [
+      { "label": "Demo", "url": "https://show-me-your-drawing.herokuapp.com/" }
+    ]
+  },
+  {
+    "id": "faketourist",
+    "type": "report",
+    "date": "2019-06",
+    "title": "faketourist（SPAJAM 2019）",
+    "desc": "旅行先の映える写真の顔を入れ替えて自分のものにできる権利を売買するアプリ。SPAJAM2019発表。",
+    "image": "/images/faketourist.png",
+    "icon": "📸",
+    "links": []
+  },
+  {
+    "id": "wabisabi",
+    "type": "report",
+    "date": "2019-03",
+    "title": "wabisabi ~listen the melody of things~（SXSW）",
+    "desc": "認識した物体のHSV色彩情報から音楽を生成するアプリ。Sechack365海外派遣チームでSXSWにて発表。Eluv.io企業賞受賞。",
+    "image": "/images/sxsw.png",
+    "icon": "🎵",
+    "links": [
+      { "label": "ブログ", "url": "http://akisatooo.hatenablog.com/entry/2019/04/07/232752" }
+    ]
+  },
+  {
+    "id": "kanjou-suii",
+    "type": "portfolio",
+    "date": "2018-11",
+    "title": "感情推移図作成サービス（Sechack365）",
+    "desc": "Twitterの投稿文を感情値判定し推移図を表示するWebサービス。fasttextで類似度判定。Sechack365発表。",
+    "image": "/images/sechack1.png",
+    "icon": "📊",
+    "links": [
+      { "label": "詳細", "url": "https://sechack365.nict.go.jp/achievement/2018/index.html" }
+    ]
+  },
+  {
+    "id": "serif-balloon",
+    "type": "portfolio",
+    "date": "2018-11",
+    "title": "セリフballon（Sechack365）",
+    "desc": "画像にセリフを埋め込みセリフ付き画像を低コストで作成するサービス。Sechack365発表。",
+    "image": "/images/sechack2.png",
+    "icon": "💬",
+    "links": [
+      { "label": "詳細", "url": "https://sechack365.nict.go.jp/achievement/2018/index.html" }
+    ]
+  },
+  {
+    "id": "meitan-nanako",
+    "type": "report",
+    "date": "2018-06",
+    "title": "名探偵ななこ（SPAJAM 2018 優秀賞）",
+    "desc": "外国人観光客向けに仙台のお土産の名前を判定するスマホアプリ。SPAJAM2018仙台予選優秀賞。",
+    "image": "/images/spajam2018.png",
+    "icon": "🔍",
+    "links": [
+      { "label": "Slide", "url": "https://speakerdeck.com/ynntech/spajam-2018-xian-tai-yu-xuan-detective-nanako" }
+    ]
+  },
+  {
+    "id": "biomod-2015",
+    "type": "report",
+    "date": "2015-11",
+    "title": "BIOMD 2015 Harvard Grand Prize",
+    "desc": "ハーバード大学開催の国際分子デザインコンテスト。DNAを用いた生体分子を設計。TeamSendaiとして統合優勝。",
+    "image": "/images/biomod2015.png",
+    "icon": "🧬",
+    "links": [
+      { "label": "詳細", "url": "http://biomod.net/winners/2015.html" }
+    ]
+  },
+  {
+    "id": "ican-2014",
+    "type": "report",
+    "date": "2014-07",
+    "title": "Savebook（iCAN'14 世界3位）",
+    "desc": "地震時に本棚の本が落ちるのを防ぐIoT仕切り。震度4以上でモーターが自動で仕切りを上げる。世界3位受賞。",
+    "image": "/images/savebook.png",
+    "icon": "🏆",
+    "links": [
+      { "label": "詳細", "url": "http://www.rdceim.tohoku.ac.jp/iCAN14_sendai/result.html" }
+    ]
+  }
+]
