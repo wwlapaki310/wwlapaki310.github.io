@@ -1,4 +1,5 @@
 export type PostType = 'blog' | 'report' | 'portfolio' | 'slide'
+export type Locale = 'ja' | 'en'
 
 export interface PostLink {
   label: string
@@ -10,18 +11,18 @@ export interface Post {
   type: PostType
   date: string        // "2026-01" or "2025-12-25"
   title: string
+  titleEn?: string
   desc: string
+  descEn?: string
   image?: string      // path under /images/ — optional
   icon?: string       // emoji fallback when no image
   links: PostLink[]
   blogUrl?: string    // canonical blog URL (for blog/report types)
 }
 
-export const TYPE_LABELS: Record<PostType, string> = {
-  blog: 'Blog',
-  report: '体験記',
-  portfolio: 'Portfolio',
-  slide: 'Slides',
+export const TYPE_LABELS: Record<Locale, Record<PostType, string>> = {
+  ja: { blog: 'Blog', report: '体験記', portfolio: 'Portfolio', slide: 'Slides' },
+  en: { blog: 'Blog', report: 'Report',  portfolio: 'Portfolio', slide: 'Slides' },
 }
 
 export const TYPE_COLORS: Record<PostType, string> = {
