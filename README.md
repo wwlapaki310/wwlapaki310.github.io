@@ -75,14 +75,36 @@ ENテキストは同ファイルの `en:` 以下を編集。
 
 ---
 
-## はてなブログ連携
+## はてなブログを更新した場合
+
+ブログ記事はビルド時にRSSから取得するため、**ブログを更新しただけではサイトに即時反映されない**。
+
+ただし GitHub Actions が **毎日 09:00 JST に自動リビルド・デプロイ**を実行するため、翌朝には反映される。
+
+すぐに反映したい場合は GitHub リポジトリの **Actions → Deploy to GitHub Pages → Run workflow** で手動実行する。
+
+### はてなブログ連携の仕組み
 
 `lib/hatena.ts` で RSS を取得。
 
 - RSS URL: `https://akisatooo.hatenablog.com/rss`
-- 1時間キャッシュ（`revalidate: 3600`）
 - `activity.json` に同じ `blogUrl` があるエントリは重複除去される
 - 記事の画像はRSS description の `<img>` タグから自動抽出
+
+---
+
+## GitHub Actions でやっていること
+
+`.github/workflows/deploy.yml` で以下を自動実行：
+
+1. `npm ci` — 依存パッケージのインストール
+2. `npm run build` — Next.js の静的ビルド（`out/` に出力）。この時点ではてなブログRSSも取得される
+3. `out/` を GitHub Pages にデプロイ
+
+**実行タイミング：**
+- `master` ブランチへの push 時
+- 毎日 09:00 JST（スケジュール自動実行）
+- GitHub Actions 画面から手動実行（Run workflow）
 
 ---
 

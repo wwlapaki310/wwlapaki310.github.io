@@ -4,6 +4,8 @@ on:
   push:
     branches: [master]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # 毎日 09:00 JST (UTC 00:00) に自動リビルド
 
 permissions:
   contents: read
