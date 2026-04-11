@@ -149,6 +149,7 @@
     "desc": "5ステージ構成、Photonでネットワーク同期。ゼルダの祠のような神秘的な世界観のオンラインゲーム。",
     "icon": "🎮",
     "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=rqnaxJkhNx0" },
       { "label": "プレイ", "url": "https://unityroom.com/games/aki310-lot1" }
     ]
   },
@@ -196,6 +197,7 @@
     "desc": "画像を送ると顔をスタンプで隠してくれるLINE Bot。OpenCV + LINE Messaging API。",
     "icon": "🤖",
     "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=iLz7W2Dl7iY" },
       { "label": "GitHub", "url": "https://github.com/wwlapaki310/LineAPI" }
     ]
   },
@@ -207,6 +209,7 @@
     "desc": "絵を書く過程をGIF動画にするサービス。絵の描き方を知ったり、予想で期待と裏切りを楽しめる。",
     "icon": "🎨",
     "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=RQbdIWpDZm4" },
       { "label": "Demo", "url": "https://show-me-your-drawing.herokuapp.com/" }
     ]
   },
@@ -219,6 +222,18 @@
     "image": "/images/faketourist.png",
     "icon": "📸",
     "links": []
+  },
+  {
+    "id": "iiit",
+    "type": "portfolio",
+    "date": "2019-03",
+    "title": "iiiT（DATEAPPS2019）",
+    "desc": "「知ったかぶり」のない生産的な会議を実現するWebアプリ。表情orバーから理解度を判定し、音声や単語の意味を即表示。DATEAPPS2019出展。",
+    "image": "/images/iiit.jpg",
+    "icon": "💡",
+    "links": [
+      { "label": "詳細", "url": "http://vsmedia.info/2019/03/06/dateapps2019_1/" }
+    ]
   },
   {
     "id": "wabisabi",
@@ -257,6 +272,40 @@
     ]
   },
   {
+    "id": "kaoss-takt",
+    "type": "portfolio",
+    "date": "2017-11",
+    "title": "Kaoss Takt（JPhacks2017）",
+    "desc": "スマホでDJ体験ができるアプリ。スマホ端末の加速度・角速度からモーションを把握し、曲を選択、変調を加える。JPhacks2017仙台予選出展。",
+    "icon": "🎧",
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=RxwkAhTtIh0" },
+      { "label": "GitHub", "url": "https://github.com/jphacks/SD_1706" }
+    ]
+  },
+  {
+    "id": "sleep-hack",
+    "type": "report",
+    "date": "2018-11",
+    "title": "Sleep hack（JPhacks2018）",
+    "desc": "軍の睡眠術など複数の文献をもとに、音声で睡眠アドバイスを行うスマートスピーカースキルを開発。JPhacks2018仙台予選出展。",
+    "icon": "😴",
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=bmMFRU4lzY4" }
+    ]
+  },
+  {
+    "id": "ball-rolling",
+    "type": "portfolio",
+    "date": "2018",
+    "title": "ボール転がし×緑の悪魔",
+    "desc": "近寄る赤箱から逃げながらクリスタルを集めるボール転がしゲーム。Unity教室で作成。",
+    "icon": "🎮",
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=HnvzeQITF78" }
+    ]
+  },
+  {
     "id": "meitan-nanako",
     "type": "report",
     "date": "2018-06",
@@ -269,6 +318,18 @@
     ]
   },
   {
+    "id": "biomod-2016",
+    "type": "report",
+    "date": "2016-11",
+    "title": "国際分子デザインコンテスト BIOMOD2016",
+    "desc": "ハーバード大学開催の国際分子デザインコンテスト。Webページ作成を担当。TeamSendaiとして出場。",
+    "image": "/images/biomod2016.png",
+    "icon": "🧬",
+    "links": [
+      { "label": "Site", "url": "https://biomod2016.gitlab.io/sendai/" }
+    ]
+  },
+  {
     "id": "biomod-2015",
     "type": "report",
     "date": "2015-11",
@@ -278,6 +339,28 @@
     "icon": "🧬",
     "links": [
       { "label": "詳細", "url": "http://biomod.net/winners/2015.html" }
+    ]
+  },
+  {
+    "id": "shiboretor",
+    "type": "report",
+    "date": "2014-07",
+    "title": "シボレーター（iCAN'14）",
+    "desc": "乳しぼりの腕をシリコン樹脂デバイスの4つの加速度センサで判定し、PC上のゲームに連動させた作品。iCAN'14出場。",
+    "icon": "🖐️",
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=kFYFr6BcUuU" }
+    ]
+  },
+  {
+    "id": "rocket",
+    "type": "report",
+    "date": "2014",
+    "title": "手作りロケット",
+    "desc": "固体火薬とマーベルチョコ・バルサ板で胴体、ビニールでパラシュートを自作。大学初年度に複数回製作。JAXAスペーススクールでも作成。",
+    "icon": "🚀",
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=JbZ2ZF7RlB4" }
     ]
   },
   {

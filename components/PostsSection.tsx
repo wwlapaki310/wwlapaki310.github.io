@@ -1,12 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { PostCard } from '@/components/PostCard'
 import type { Post, PostType, Locale } from '@/types/post'
-import { TYPE_LABELS } from '@/types/post'
 import type { Messages } from '@/i18n/messages'
+import { autoTranslate } from '@/lib/translate'
 
-const INITIAL_COUNT = 6
+const INITIAL_COUNT = 12
 
 interface FilterDef {
   key: PostType | 'all'
@@ -24,6 +24,20 @@ export function PostsSection({
 }) {
   const [activeFilter, setActiveFilter] = useState<PostType | 'all'>('all')
   const [showAll, setShowAll] = useState(false)
+  const [translatedPosts, setTranslatedPosts] = useState<Post[]>(posts)
+
+  useEffect(() => {
+    if (locale !== 'en') return
+    autoTranslate(posts).then(translations => {
+      setTranslatedPosts(posts.map(p => ({
+        ...p,
+        titleEn: translations[p.id]?.titleEn ?? p.titleEn ?? p.title,
+        descEn:  translations[p.id]?.descEn  ?? p.descEn  ?? p.desc,
+      })))
+    })
+  }, [locale, posts])
+
+  const displayPosts = locale === 'en' ? translatedPosts : posts
 
   const FILTERS: FilterDef[] = [
     { key: 'all',       label: t.filters.all },
@@ -33,7 +47,7 @@ export function PostsSection({
     { key: 'slide',     label: t.filters.slide },
   ]
 
-  const filtered = activeFilter === 'all' ? posts : posts.filter((p) => p.type === activeFilter)
+  const filtered = activeFilter === 'all' ? displayPosts : displayPosts.filter((p) => p.type === activeFilter)
   const visible = showAll ? filtered : filtered.slice(0, INITIAL_COUNT)
   const hiddenCount = filtered.length - INITIAL_COUNT
 
@@ -84,7 +98,7 @@ export function PostsSection({
             onClick={() => setShowAll((prev) => !prev)}
             className="px-6 py-2 rounded-full border border-border text-muted text-sm hover:border-accent/40 hover:text-white transition-colors"
           >
-            {showAll ? t.collapse : t.showMore(hiddenCount)}
+            {showAll ? t.collapse : t.showMore.replace('{n}', String(hiddenCount))}
           </button>
         </div>
       )}

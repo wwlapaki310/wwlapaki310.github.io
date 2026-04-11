@@ -20,7 +20,7 @@ export function LangSwitch() {
         JA
       </Link>
       <Link
-        href="/en"
+        href="/en/"
         className={`px-2 py-0.5 rounded-full transition-colors ${
           isEn
             ? 'bg-accent text-white'

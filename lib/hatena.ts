@@ -28,7 +28,7 @@ export async function fetchHatenaPosts(): Promise<Post[]> {
     if (!res.ok) return []
     const xml = await res.text()
 
-    const parser = new XMLParser({ ignoreAttributes: false, isArray: (name) => name === 'item' })
+    const parser = new XMLParser({ ignoreAttributes: false, isArray: (name) => name === 'item', processEntities: { maxTotalExpansions: 100000 } })
     const parsed = parser.parse(xml)
     const items: RssItem[] = parsed?.rss?.channel?.item ?? []
 
@@ -42,8 +42,14 @@ export async function fetchHatenaPosts(): Promise<Post[]> {
       const dateRaw = item.pubDate ?? ''
       const date = dateRaw ? new Date(dateRaw).toISOString().slice(0, 10) : ''
 
+      const rawHtml = item.description ?? ''
+
+      // description HTML から最初の画像URLを抽出
+      const imgMatch = rawHtml.match(/<img[^>]+src="(https?:[^"]+)"/)
+      const image = imgMatch?.[1]
+
       // strip HTML tags from description
-      const desc = (item.description ?? '')
+      const desc = rawHtml
         .replace(/<[^>]+>/g, '')
         .replace(/\s+/g, ' ')
         .trim()
@@ -55,6 +61,7 @@ export async function fetchHatenaPosts(): Promise<Post[]> {
         date,
         title: item.title ?? '',
         desc,
+        image,
         links: [{ label: 'ブログ', url: item.link ?? '' }],
         blogUrl: item.link ?? '',
       }

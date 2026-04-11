@@ -1,8 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f1117;
+  --color-surface: #1a1d27;
+  --color-border: #2a2d3a;
+  --color-accent: #7c6ff7;
+  --color-accent-light: #a89cf7;
+  --color-muted: #6b7280;
+  --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+}
 
 :root {
   --bg: #0f1117;

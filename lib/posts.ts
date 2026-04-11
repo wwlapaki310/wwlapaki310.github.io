@@ -1,4 +1,4 @@
-import postsData from '@/content/posts.json'
+import postsData from '@/content/activity.json'
 import type { Post } from '@/types/post'
 
 export function getStaticPosts(): Post[] {

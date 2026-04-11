@@ -21,7 +21,7 @@ export interface Post {
 }
 
 export const TYPE_LABELS: Record<Locale, Record<PostType, string>> = {
-  ja: { blog: 'Blog', report: '体験記', portfolio: 'Portfolio', slide: 'Slides' },
+  ja: { blog: 'ブログ', report: '体験記', portfolio: '開発物', slide: 'Slides' },
   en: { blog: 'Blog', report: 'Report',  portfolio: 'Portfolio', slide: 'Slides' },
 }
 
