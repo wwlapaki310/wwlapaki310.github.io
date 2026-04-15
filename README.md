@@ -108,6 +108,19 @@ ENテキストは同ファイルの `en:` 以下を編集。
 
 ---
 
+## アクセス解析（Google Analytics）
+
+計測ID `G-YDEVQ0YYLB` を `app/layout.tsx` に埋め込み済み。デプロイするだけで自動的に計測される。
+
+**確認方法：**
+- [Google Analytics](https://analytics.google.com/) にログインして該当プロパティを開く
+- リアルタイムレポートでアクセスが計測されているか確認できる
+
+**計測IDを変更したい場合：**
+`app/layout.tsx` の `GA_ID` 定数を書き換える。
+
+---
+
 ## 技術スタック
 
 | | |
