@@ -107,7 +107,7 @@ export function Hero({ t }: { t: Messages['hero'] }) {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1WaaCUJOFb_DxdXQ1hG7ZQF_cu7Jbm_pr/view"
+                href="https://drive.google.com/file/d/1LpjFMfg2yacvzPvOoV02PSXoHZ_KWOoP/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-xs text-muted border border-accent/30 rounded px-3 py-1.5 hover:border-accent/60 hover:text-accent-light transition-colors"
