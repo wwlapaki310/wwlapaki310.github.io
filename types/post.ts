@@ -25,6 +25,13 @@ export const TYPE_LABELS: Record<Locale, Record<PostType, string>> = {
   en: { blog: 'Blog', report: 'Report',  portfolio: 'Portfolio', slide: 'Slides' },
 }
 
+export interface HatenaOverride {
+  hatenaOverride: true
+  blogUrl: string
+  type?: PostType
+  image?: string
+}
+
 export const TYPE_COLORS: Record<PostType, string> = {
   blog:      'bg-blue-900/40  text-blue-300  border-blue-700/50',
   report:    'bg-amber-900/40 text-amber-300 border-amber-700/50',
