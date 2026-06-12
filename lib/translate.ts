@@ -40,18 +40,20 @@ export async function autoTranslate(
     }
   }
 
-  for (const post of toFetch) {
-    try {
-      const [titleEn, descEn] = await Promise.all([
-        translateText(post.title),
-        translateText(post.desc),
-      ])
-      result[post.id] = { titleEn, descEn }
-      cache[post.id] = { titleEn, descEn }
-    } catch {
-      result[post.id] = { titleEn: post.title, descEn: post.desc }
-    }
-  }
+  await Promise.all(
+    toFetch.map(async (post) => {
+      try {
+        const [titleEn, descEn] = await Promise.all([
+          translateText(post.title),
+          translateText(post.desc),
+        ])
+        result[post.id] = { titleEn, descEn }
+        cache[post.id] = { titleEn, descEn }
+      } catch {
+        result[post.id] = { titleEn: post.title, descEn: post.desc }
+      }
+    })
+  )
 
   if (toFetch.length > 0) saveCache(cache)
   return result
