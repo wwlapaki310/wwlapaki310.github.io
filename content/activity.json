@@ -3,6 +3,17 @@
   { "hatenaOverride": true, "blogUrl": "https://akisatooo.hatenablog.com/entry/2026/06/04/234000", "type": "blog" },
 
   {
+    "id": "sechack365-returns-2026",
+    "type": "slide",
+    "date": "2026-09-12",
+    "title": "WireGuard for Apache NuttX",
+    "desc": "Sechack365Returns（修了生OB会）でLT登壇。Apache NuttX向けのWireGuard実装について発表。",
+    "icon": "🎤",
+    "links": [
+      { "label": "Slide", "url": "https://wwlapaki310.github.io/gsoc2026-nuttx-wireguard/docs/presentation/returns-slides.html#1" }
+    ]
+  },
+  {
     "id": "mandalart",
     "type": "portfolio",
     "date": "2026-01",
