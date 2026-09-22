@@ -8,6 +8,7 @@
     "date": "2026-09-12",
     "title": "WireGuard for Apache NuttX",
     "desc": "Sechack365Returns（修了生OB会）でLT登壇。Apache NuttX向けのWireGuard実装について発表。",
+    "image": "/images/sechack365-returns-2026.png",
     "icon": "🎤",
     "links": [
       { "label": "Slide", "url": "https://wwlapaki310.github.io/gsoc2026-nuttx-wireguard/docs/presentation/returns-slides.html#1" }
