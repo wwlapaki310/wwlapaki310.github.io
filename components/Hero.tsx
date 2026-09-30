@@ -68,17 +68,17 @@ export function Hero({ t }: { t: Messages['hero'] }) {
         <LangSwitch />
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-4 py-16">
+      <div className="relative max-w-5xl mx-auto px-4 py-16">
 
         {/* ── Top: avatar / name / bio / socials ── */}
-        <div className="flex flex-col sm:flex-row items-start gap-8 mb-10">
+        <div className="flex flex-col sm:flex-row items-start gap-8 mb-12">
           <div className="shrink-0 mx-auto sm:mx-0">
-            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-accent/30">
+            <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-accent/40 shadow-[0_0_0_6px_rgba(124,111,247,0.08)]">
               <Image
                 src="/images/kitune2.png"
                 alt={t.name}
-                width={96}
-                height={96}
+                width={112}
+                height={112}
                 className="object-cover"
               />
             </div>
@@ -90,7 +90,7 @@ export function Hero({ t }: { t: Messages['hero'] }) {
               <p className="text-muted text-sm mt-0.5">{t.nameJa}</p>
             </div>
 
-            <p className="text-sm text-slate-300 leading-relaxed">{t.bio}</p>
+            <p className="text-sm text-slate-300 leading-relaxed max-w-2xl">{t.bio}</p>
 
             {/* Social icons + CV */}
             <div className="flex items-center gap-2 flex-wrap">
@@ -118,17 +118,48 @@ export function Hero({ t }: { t: Messages['hero'] }) {
           </div>
         </div>
 
+        {/* ── Highlights: past creations, with photos ── */}
+        <div className="mb-12">
+          <h2 className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">
+            {t.highlightsLabel}
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {t.highlights.map((h) => (
+              <a
+                key={h.url}
+                href={h.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col min-w-0 bg-surface border border-border rounded-xl overflow-hidden hover:border-accent/40 transition-colors duration-200"
+              >
+                <div className="relative w-full aspect-[4/3] bg-bg overflow-hidden">
+                  <Image
+                    src={h.image}
+                    alt={h.title}
+                    fill
+                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-200"
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="px-3 py-2.5 min-w-0">
+                  <p className="text-xs text-slate-300 leading-snug line-clamp-2 break-words">{h.title}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* ── Bottom: certs / experiences / hobbies ── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
           {/* 資格 */}
-          <div>
-            <h2 className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">
-              {t.certsLabel}
+          <div className="bg-surface border border-border rounded-xl p-5 hover:border-accent/30 transition-colors duration-200">
+            <h2 className="flex items-center gap-1.5 text-xs font-semibold text-accent uppercase tracking-widest mb-3">
+              <span aria-hidden>🎓</span> {t.certsLabel}
             </h2>
-            <ul className="flex flex-col gap-1.5">
+            <ul className="flex flex-col gap-2">
               {t.certs.map((c) => (
-                <li key={c.abbr} className="flex items-start gap-1.5 text-xs text-slate-300">
+                <li key={c.abbr} className="flex items-start gap-1.5 text-xs text-slate-300 leading-relaxed">
                   <span className="shrink-0 text-accent/60 mt-0.5">▸</span>
                   {c.name}
                 </li>
@@ -137,13 +168,13 @@ export function Hero({ t }: { t: Messages['hero'] }) {
           </div>
 
           {/* 経験 */}
-          <div>
-            <h2 className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">
-              {t.experiencesLabel}
+          <div className="bg-surface border border-border rounded-xl p-5 hover:border-accent/30 transition-colors duration-200">
+            <h2 className="flex items-center gap-1.5 text-xs font-semibold text-accent uppercase tracking-widest mb-3">
+              <span aria-hidden>🏆</span> {t.experiencesLabel}
             </h2>
-            <ul className="flex flex-col gap-1.5">
+            <ul className="flex flex-col gap-2">
               {t.experiences.map((e) => (
-                <li key={e} className="flex items-start gap-1.5 text-xs text-slate-300">
+                <li key={e} className="flex items-start gap-1.5 text-xs text-slate-300 leading-relaxed">
                   <span className="shrink-0 text-accent/60 mt-0.5">▸</span>
                   {e}
                 </li>
@@ -152,17 +183,17 @@ export function Hero({ t }: { t: Messages['hero'] }) {
           </div>
 
           {/* 趣味 */}
-          <div>
-            <h2 className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">
-              {t.hobbiesLabel}
+          <div className="bg-surface border border-border rounded-xl p-5 hover:border-accent/30 transition-colors duration-200">
+            <h2 className="flex items-center gap-1.5 text-xs font-semibold text-accent uppercase tracking-widest mb-3">
+              <span aria-hidden>✨</span> {t.hobbiesLabel}
             </h2>
             <div className="flex flex-wrap gap-1.5">
               {t.hobbies.map((h) => (
                 <span
-                  key={h}
-                  className="text-xs text-muted border border-border rounded-full px-2.5 py-0.5 hover:border-border/80 hover:text-slate-300 transition-colors"
+                  key={h.label}
+                  className="flex items-center gap-1 text-xs text-slate-300 bg-bg border border-border rounded-full px-2.5 py-1 hover:border-accent/40 transition-colors"
                 >
-                  {h}
+                  <span aria-hidden>{h.icon}</span> {h.label}
                 </span>
               ))}
             </div>
