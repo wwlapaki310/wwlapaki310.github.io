@@ -69,8 +69,7 @@ EN ページ（`/en`）では、訪問者のブラウザが自動的に Google T
 - **bio**: 自己紹介文
 - **certs**: 資格リスト（`{ abbr, name }` 形式）
 - **experiences**: 経験リスト
-- **hobbies**: 趣味リスト（`{ icon, label }` 形式。絵文字1つ＋ラベル）
-- **highlights**: トップの「過去の創作物」写真ストリップ（`{ image, title, url }` 形式）。`image` は `public/images/` 以下のパス、`url` はブログ記事やスライドなど詳細への外部リンク
+- **hobbies**: 趣味リスト
 
 ENテキストは同ファイルの `en:` 以下を編集。
 
