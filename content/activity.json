@@ -1,7 +1,23 @@
 [
   { "hatenaOverride": true, "blogUrl": "https://akisatooo.hatenablog.com/entry/2026/06/11/225145", "image": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akisatooo/20260610/20260610235111.png" },
   { "hatenaOverride": true, "blogUrl": "https://akisatooo.hatenablog.com/entry/2026/06/04/234000", "type": "blog" },
+  { "hatenaOverride": true, "blogUrl": "https://akisatooo.hatenablog.com/entry/2026/10/09/093053", "type": "blog" },
+  { "hatenaOverride": true, "blogUrl": "https://akisatooo.hatenablog.com/entry/2026/08/17/234244", "type": "portfolio" },
+  { "hatenaOverride": true, "blogUrl": "https://akisatooo.hatenablog.com/entry/2026/08/17/232731", "type": "portfolio" },
 
+  {
+    "id": "coc-glasgow-2026",
+    "type": "slide",
+    "date": "2026-10-13",
+    "title": "WireGuard for Apache NuttX - Bringing Secure Remote Access to Embedded Devices",
+    "desc": "Community Over Code Glasgowで登壇。Apache NuttXへのWireGuard実装と、組み込みデバイスへの安全なリモートアクセスについて発表。",
+    "image": "/images/coc-glasgow-2026.jpg",
+    "icon": "🎤",
+    "links": [
+      { "label": "Slide", "url": "https://speakerdeck.com/aki310ooooo/wireguard-for-apache-nuttx-bringing-secure-remote-access-to-embedded-devices" },
+      { "label": "Web", "url": "https://wwlapaki310.github.io/gsoc2026-nuttx-wireguard/docs/presentation/coc-glasgow-reveal/index.html" }
+    ]
+  },
   {
     "id": "sechack365-returns-2026",
     "type": "slide",
